@@ -75,6 +75,7 @@ nnoremap <leader>h <C-w>s<C-w>j
 " }}}
 
 autocmd BufRead,BufNewFile */nginx/*,/etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
+autocmd BufRead,BufNewFile */mock-build/*/config setfiletype shell
 
 " Remove trailing whitespaces when saving
 " Wanna know more? http://vim.wikia.com/wiki/Remove_unwanted_spaces
