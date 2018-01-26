@@ -39,6 +39,8 @@ endif
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.it', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=0
 
+noremap <Leader>t :terminal zsh<CR>
+
 " . searching {{{
 
 " clear highlight after search
