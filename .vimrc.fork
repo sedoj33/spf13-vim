@@ -29,6 +29,13 @@ else
   let g:airline_theme='molokai'
 endif
 
+if has("gui_running")
+    if has("gui_gtk2") || has("gui_gtk3")
+        map <silent> <F11>
+        \    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
+    endif
+endif
+
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.it', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=0
 
