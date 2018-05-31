@@ -78,6 +78,7 @@ nnoremap <leader>h <C-w>s<C-w>j
 
 autocmd BufRead,BufNewFile */nginx/*,/etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 autocmd BufRead,BufNewFile */mock-build/*/config set syntax=sh
+autocmd BufRead,BufNewFile Jenkinsfile,jenkinsfile set syntax=groovy
 
 " Remove trailing whitespaces when saving
 " Wanna know more? http://vim.wikia.com/wiki/Remove_unwanted_spaces
