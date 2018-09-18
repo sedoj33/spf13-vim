@@ -104,13 +104,13 @@
     set mousehide               " Hide the mouse cursor while typing
     scriptencoding utf-8
 
-"    if has('clipboard')
-        "if has('unnamedplus')  " When possible use + register for copy-paste
-            "set clipboard=unnamed,unnamedplus
-        "else         " On mac and Windows, use * register for copy-paste
-            "set clipboard=unnamed
-        "endif
-"    endif
+    if has('clipboard')
+        if has('unnamedplus')  " When possible use + register for copy-paste
+            set clipboard=unnamed,unnamedplus
+        else         " On mac and Windows, use * register for copy-paste
+            set clipboard=unnamed
+        endif
+    endif
 
     " Most prefer to automatically switch to the current file directory when
     " a new buffer is opened; to prevent this behavior, add the following to
@@ -226,7 +226,7 @@
     set smartcase                   " Case sensitive when uc present
     set wildmenu                    " Show list instead of just completing
     set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
-    set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
+    "set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
