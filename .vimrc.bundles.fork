@@ -15,3 +15,5 @@ Bundle 'vim-scripts/bash-support.vim'
 Bundle 'vim-scripts/perl-support.vim'
 Bundle 'vim-perl/vim-perl'
 Bundle 'fatih/vim-go'
+" Puppet
+Bundle 'rodjek/vim-puppet'
